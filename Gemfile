@@ -8,6 +8,12 @@ gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'bootstrap-sass'
+gem 'haml'
+
+group :development do
+  gem 'rails_layout'
+end
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -30,6 +36,12 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'rspec'
+  gem "rspec-rails"
+  gem 'factory_girl_rails'
 end
 
 # Use ActiveModel has_secure_password
